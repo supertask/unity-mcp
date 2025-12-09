@@ -86,14 +86,14 @@ namespace MCPForUnityTests.Editor.Helpers
             string toml = string.Join("\n", new[]
             {
                 "[mcp_servers.unityMCP]",
-                "command = \"uvx --from git+https://github.com/CoplayDev/unity-mcp@v6.3.0#subdirectory=Server\"",
+                "command = \"uvx --from git+https://github.com/supertask/unity-mcp@v6.3.0#subdirectory=Server\"",
                 "args = [\"mcp-for-unity\"]"
             });
 
             bool result = CodexConfigHelper.TryParseCodexServer(toml, out string command, out string[] args);
 
             Assert.IsTrue(result, "Parser should detect server definition");
-            Assert.AreEqual("uvx --from git+https://github.com/CoplayDev/unity-mcp@v6.3.0#subdirectory=Server", command);
+            Assert.AreEqual("uvx --from git+https://github.com/supertask/unity-mcp@v6.3.0#subdirectory=Server", command);
             CollectionAssert.AreEqual(new[] { "mcp-for-unity" }, args);
         }
 
@@ -218,7 +218,7 @@ namespace MCPForUnityTests.Editor.Helpers
             var thirdArg = (args[2] as TomlString).Value;
             
             Assert.AreEqual("--from", firstArg, "First arg should be --from");
-            Assert.IsTrue(secondArg.Contains("git+https://github.com/CoplayDev/unity-mcp"), "Second arg should be git URL");
+            Assert.IsTrue(secondArg.Contains("git+https://github.com/supertask/unity-mcp"), "Second arg should be git URL");
             Assert.AreEqual("mcp-for-unity", thirdArg, "Third arg should be mcp-for-unity");
 
             // Verify env.SystemRoot is present on Windows
@@ -283,7 +283,7 @@ namespace MCPForUnityTests.Editor.Helpers
             var thirdArg = (args[2] as TomlString).Value;
             
             Assert.AreEqual("--from", firstArg, "First arg should be --from");
-            Assert.IsTrue(secondArg.Contains("git+https://github.com/CoplayDev/unity-mcp"), "Second arg should be git URL");
+            Assert.IsTrue(secondArg.Contains("git+https://github.com/supertask/unity-mcp"), "Second arg should be git URL");
             Assert.AreEqual("mcp-for-unity", thirdArg, "Third arg should be mcp-for-unity");
 
             // Verify env is NOT present on non-Windows platforms
@@ -294,7 +294,7 @@ namespace MCPForUnityTests.Editor.Helpers
         [Test]
         public void UpsertCodexServerBlock_OnWindows_IncludesSystemRootEnv()
         {
-            // This test verifies the fix for https://github.com/CoplayDev/unity-mcp/issues/315
+            // This test verifies the fix for https://github.com/supertask/unity-mcp/issues/315
             // Ensures that upsert operations also include Windows-specific env configuration in stdio mode
 
             // Force stdio mode
@@ -350,7 +350,7 @@ namespace MCPForUnityTests.Editor.Helpers
             var thirdArg = (args[2] as TomlString).Value;
             
             Assert.AreEqual("--from", firstArg, "First arg should be --from");
-            Assert.IsTrue(secondArg.Contains("git+https://github.com/CoplayDev/unity-mcp"), "Second arg should be git URL");
+            Assert.IsTrue(secondArg.Contains("git+https://github.com/supertask/unity-mcp"), "Second arg should be git URL");
             Assert.AreEqual("mcp-for-unity", thirdArg, "Third arg should be mcp-for-unity");
 
             // Verify env.SystemRoot is present on Windows
@@ -424,7 +424,7 @@ namespace MCPForUnityTests.Editor.Helpers
             var thirdArg = (args[2] as TomlString).Value;
             
             Assert.AreEqual("--from", firstArg, "First arg should be --from");
-            Assert.IsTrue(secondArg.Contains("git+https://github.com/CoplayDev/unity-mcp"), "Second arg should be git URL");
+            Assert.IsTrue(secondArg.Contains("git+https://github.com/supertask/unity-mcp"), "Second arg should be git URL");
             Assert.AreEqual("mcp-for-unity", thirdArg, "Third arg should be mcp-for-unity");
 
             // Verify env is NOT present on non-Windows platforms

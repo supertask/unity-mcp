@@ -172,7 +172,7 @@ namespace MCPForUnity.Editor.Windows.Components.Settings
             {
                 versionLabel.text = $"\u2191 v{currentVersion} (Update available: v{updateCheck.LatestVersion})";
                 versionLabel.style.color = new Color(1f, 0.7f, 0f);
-                versionLabel.tooltip = $"Version {updateCheck.LatestVersion} is available. Update via Package Manager.\n\nGit URL: https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity";
+                versionLabel.tooltip = $"Version {updateCheck.LatestVersion} is available. Update via Package Manager.\n\nGit URL: https://github.com/supertask/unity-mcp.git?path=/MCPForUnity";
             }
             else
             {

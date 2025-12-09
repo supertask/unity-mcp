@@ -39,7 +39,7 @@
                     </ui:VisualElement>
                     <ui:Label text="Examples:" class="help-text" style="margin-top: 5px;" />
                     <ui:Label text="• Local: /Users/you/Projects/unity-mcp/Server" class="help-text" />
-                    <ui:Label text="• Remote: git+https://github.com/CoplayDev/unity-mcp@v6.3.0#subdirectory=Server" class="help-text" />
+                    <ui:Label text="• Remote: git+https://github.com/supertask/unity-mcp@v6.3.0#subdirectory=Server" class="help-text" />
                 </ui:VisualElement>
             </ui:Foldout>
         </ui:VisualElement>

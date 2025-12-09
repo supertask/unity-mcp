@@ -14,7 +14,7 @@ namespace MCPForUnity.Editor.Services
     {
         private const string LastCheckDateKey = EditorPrefKeys.LastUpdateCheck;
         private const string CachedVersionKey = EditorPrefKeys.LatestKnownVersion;
-        private const string PackageJsonUrl = "https://raw.githubusercontent.com/CoplayDev/unity-mcp/main/MCPForUnity/package.json";
+        private const string PackageJsonUrl = "https://raw.githubusercontent.com/supertask/unity-mcp/main/MCPForUnity/package.json";
 
         /// <inheritdoc/>
         public UpdateCheckResult CheckForUpdate(string currentVersion)
@@ -132,7 +132,7 @@ namespace MCPForUnity.Editor.Services
             try
             {
                 // GitHub API endpoint (Option 1 - has rate limits):
-                // https://api.github.com/repos/CoplayDev/unity-mcp/releases/latest
+                // https://api.github.com/repos/supertask/unity-mcp/releases/latest
                 //
                 // We use Option 2 (package.json directly) because:
                 // - No API rate limits (GitHub serves raw files freely)
