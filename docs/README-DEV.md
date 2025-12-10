@@ -136,11 +136,11 @@ These defaults dramatically cut token usage without affecting essential informat
 
 Unity stores Git packages under a version-or-hash folder. Expect something like:
 ```
-X:\UnityProject\Library\PackageCache\com.coplaydev.unity-mcp@<version-or-hash>
+X:\UnityProject\Library\PackageCache\com.supertask.unity-mcp@<version-or-hash>
 ```
 Example (hash):
 ```
-X:\UnityProject\Library\PackageCache\com.coplaydev.unity-mcp@272123cfd97e
+X:\UnityProject\Library\PackageCache\com.supertask.unity-mcp@272123cfd97e
 
 ```
 

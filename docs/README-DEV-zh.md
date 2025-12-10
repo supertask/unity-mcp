@@ -87,11 +87,11 @@ python3 prune_tool_results.py < reports/claude-execution-output.json > reports/c
 
 Unity 将 Git 包存储在版本或哈希文件夹下。期望类似于：
 ```
-X:\UnityProject\Library\PackageCache\com.coplaydev.unity-mcp@<version-or-hash>
+X:\UnityProject\Library\PackageCache\com.supertask.unity-mcp@<version-or-hash>
 ```
 示例（哈希）：
 ```
-X:\UnityProject\Library\PackageCache\com.coplaydev.unity-mcp@272123cfd97e
+X:\UnityProject\Library\PackageCache\com.supertask.unity-mcp@272123cfd97e
 
 ```
 

@@ -20,7 +20,7 @@ import pathlib
 import subprocess
 import sys
 
-PKG_NAME = "com.coplaydev.unity-mcp"
+PKG_NAME = "com.supertask.unity-mcp"
 BRIDGE_SUBPATH = "MCPForUnity"
 
 

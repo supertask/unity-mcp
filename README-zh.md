@@ -157,7 +157,7 @@ https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#v8.0.0
 
 1. 安装 [OpenUPM CLI](https://openupm.com/docs/getting-started-cli.html)
 2. 打开终端（PowerShell、Terminal 等）并导航到您的 Unity 项目目录
-3. 运行 `openupm add com.coplaydev.unity-mcp`
+3. 运行 `openupm add com.supertask.unity-mcp`
 
 **注意：** 如果您在 Coplay 维护之前安装了 MCP 服务器，您需要在重新安装新版本之前卸载旧包。
 
